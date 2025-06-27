@@ -12,6 +12,12 @@ namespace MartianRobots.Domain.Entities
         public Position Position { get; private set; }
         public Orientation Orientation { get; private set; }
         public bool IsLost { get; private set; }
+        public Robot(Position startPosition, Orientation startOrientation)
+        {
+            Position = startPosition;
+            Orientation = startOrientation;
+            IsLost = false;
+        }
 
         public void TurnLeft()
         {
