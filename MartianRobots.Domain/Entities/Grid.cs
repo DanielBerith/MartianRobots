@@ -12,6 +12,11 @@ namespace MartianRobots.Domain.Entities
         public int MaxX { get; }
         public int MaxY { get; }
         private HashSet<Position> scentPositions = new();
+        public Grid(int maxX, int maxY)
+        {
+            MaxX = maxX;
+            MaxY = maxY;
+        }
 
         public bool HasScent(Position position) => scentPositions.Contains(position);
         public void AddScent(Position position) => scentPositions.Add(position);
