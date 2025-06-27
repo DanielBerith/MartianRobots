@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MartianRobots.Infrastructure.Interfaces
+namespace MartianRobots.Application.Interfaces
 {
-    public interface IOutputFormatter
+    public interface IInputParser
     {
-        string Format(IEnumerable<SimulationResult> results);
+        SimulationInput Parse(string input);
     }
 }
