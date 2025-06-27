@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B36E4B91-E45C-4F8B-BB5C-2469E32FA7F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{3112720D-DB64-4D28-9748-4699CB8E867B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CCA57FBB-B5CA-4FFE-9123-4F435B7C8129}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2A663B99-139B-4512-9458-B4D64E997F34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{EC8C0B0D-B1F2-4526-8F59-A11E7EB8603F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartianRobots.Domain", "MartianRobots.Domain\MartianRobots.Domain.csproj", "{5A4EB221-3CC4-48D3-9FCF-DD9D35D90FBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A4EB221-3CC4-48D3-9FCF-DD9D35D90FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4EB221-3CC4-48D3-9FCF-DD9D35D90FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4EB221-3CC4-48D3-9FCF-DD9D35D90FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4EB221-3CC4-48D3-9FCF-DD9D35D90FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3112720D-DB64-4D28-9748-4699CB8E867B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{CCA57FBB-B5CA-4FFE-9123-4F435B7C8129} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2A663B99-139B-4512-9458-B4D64E997F34} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EC8C0B0D-B1F2-4526-8F59-A11E7EB8603F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5A4EB221-3CC4-48D3-9FCF-DD9D35D90FBB} = {CCA57FBB-B5CA-4FFE-9123-4F435B7C8129}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45EC463C-0760-4996-89DF-17598AF149C9}
+	EndGlobalSection
+EndGlobal
