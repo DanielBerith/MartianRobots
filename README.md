@@ -57,55 +57,55 @@ This solution follows **Clean Architecture** principles with **Domain-Driven Des
 MartianRobots/
 │
 ├── src/
-│   ├── MartianRobots.Domain/
-│   │   ├── Entities/
-│   │   │   ├── Grid.cs              # Mars surface grid with scent tracking
-│   │   │   └── Robot.cs             # Robot entity with movement logic
-│   │   ├── Enums/
-│   │   │   └── Orientation.cs       # Cardinal directions (N,S,E,W)
-│   │   ├── ValueObjects/
-│   │   │   └── Position.cs          # Immutable coordinate record
-│   │   └── MartianRobots.Domain.csproj
-│   │
-│   ├── MartianRobots.Application/
-│   │   ├── DTOs/
-│   │   │   ├── RobotInput.cs        # Input data for a robot
-│   │   │   ├── SimulationInput.cs   # Complete simulation input
-│   │   │   └── SimulationResult.cs  # Robot's final state
-│   │   ├── Interfaces/
-│   │   │   ├── IInputParser.cs      # Input parsing contract
-│   │   │   ├── IOutputFormatter.cs  # Output formatting contract
-│   │   │   └── IRobotSimulationService.cs
-│   │   ├── Services/
-│   │   │   └── RobotSimulationService.cs  # Core simulation logic
-│   │   ├── ApplicationServicesRegistration.cs
-│   │   └── MartianRobots.Application.csproj
-│   │
-│   ├── MartianRobots.Infrastructure/
-│   │   ├── Formatters/
-│   │   │   └── OutputFormatter.cs   # Formats results to text
-│   │   ├── Parsers/
-│   │   │   └── InputParser.cs       # Parses and validates input
-│   │   ├── InfrastructureServicesRegistration.cs
-│   │   └── MartianRobots.Infrastructure.csproj
-│   │
-│   └── MartianRobots.ConsoleApp/
-│       ├── Application.cs            # Application orchestration
-│       ├── Program.cs                # Entry point with DI setup
-│       └── MartianRobots.ConsoleApp.csproj
+│ ├── MartianRobots.Domain/
+│ │ ├── Entities/
+│ │ │ ├── Grid.cs # Mars surface grid with scent tracking
+│ │ │ └── Robot.cs # Robot entity with movement logic
+│ │ ├── Enums/
+│ │ │ └── Orientation.cs # Cardinal directions (N, S, E, W)
+│ │ ├── ValueObjects/
+│ │ │ └── Position.cs # Immutable coordinate record
+│ │ └── MartianRobots.Domain.csproj
+│ │
+│ ├── MartianRobots.Application/
+│ │ ├── DTOs/
+│ │ │ ├── RobotInput.cs # Input data for a robot
+│ │ │ ├── SimulationInput.cs # Complete simulation input
+│ │ │ └── SimulationResult.cs # Robot's final state
+│ │ ├── Interfaces/
+│ │ │ ├── IInputParser.cs # Input parsing contract
+│ │ │ ├── IOutputFormatter.cs # Output formatting contract
+│ │ │ └── IRobotSimulationService.cs
+│ │ ├── Services/
+│ │ │ └── RobotSimulationService.cs # Core simulation logic
+│ │ ├── ApplicationServicesRegistration.cs
+│ │ └── MartianRobots.Application.csproj
+│ │
+│ ├── MartianRobots.Infrastructure/
+│ │ ├── Formatters/
+│ │ │ └── OutputFormatter.cs # Formats results to text
+│ │ ├── Parsers/
+│ │ │ └── InputParser.cs # Parses and validates input
+│ │ ├── InfrastructureServicesRegistration.cs
+│ │ └── MartianRobots.Infrastructure.csproj
+│ │
+│ └── MartianRobots.ConsoleApp/
+│ ├── Application.cs # Application orchestration
+│ ├── Program.cs # Entry point with DI setup
+│ └── MartianRobots.ConsoleApp.csproj
 │
 ├── tests/
-│   └── MartianRobots.Tests/
-│       ├── Application/
-│       │   └── RobotSimulationServiceTests.cs
-│       ├── Domain/
-│       │   ├── GridTests.cs
-│       │   └── RobotTests.cs
-│       ├── Infrastructure/
-│       │   ├── InputParserTests.cs
-│       │   └── OutputFormatterTests.cs
-│       ├── IntegrationTests.cs
-│       └── MartianRobots.Tests.csproj
+│ └── MartianRobots.Tests/
+│ ├── Application/
+│ │ └── RobotSimulationServiceTests.cs
+│ ├── Domain/
+│ │ ├── GridTests.cs
+│ │ └── RobotTests.cs
+│ ├── Infrastructure/
+│ │ ├── InputParserTests.cs
+│ │ └── OutputFormatterTests.cs
+│ ├── IntegrationTests.cs
+│ └── MartianRobots.Tests.csproj
 │
 ├── .gitattributes
 ├── .gitignore
